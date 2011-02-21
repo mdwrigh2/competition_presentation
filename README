@@ -1,0 +1,10 @@
+A repository containing the presentation for the LUG meeting on programming competitions.
+
+Requirements:
+
+Pygments
+Sphinx
+rst2pdf
+
+Usage:
+The pdf should already be built, but if not running `make pdf` will build it from source.
