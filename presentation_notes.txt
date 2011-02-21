@@ -1,5 +1,6 @@
 Should cover
  - Styles of competition
  - Common pitfalls at competitions
+ - Programming languages for the competition
  - Different algorithm types
    - One or two need to know algorithms for each
