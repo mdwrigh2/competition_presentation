@@ -1,1 +1,7 @@
-doctrees/
+*.swp
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
