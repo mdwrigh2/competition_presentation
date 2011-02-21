@@ -30,6 +30,27 @@
   \titlepage
 \end{frame}
 
+\begin{frame}{What Competitions Are We Talking About?}
+  \begin{centering}
+    \begin{itemize}
+      \item Competitions we \textbf{are} talking about are similar to:
+      \begin{itemize}
+        \item ACM ICPC
+        \item IEEExtreme
+        \item Facebook's Hacker Cup
+      \end{itemize}
+      \pause
+      \item Competitions we \textbf{aren't} talking about:
+      \begin{itemize}
+        \item Project Euler
+        \item Android Developer Challenge
+        \item International Obfuscated C Contest
+      \end{itemize}
+    \end{itemize}
+  \end{centering}
+\end{frame}
+       
+
 \section{Competition Styles}
 
 \begin{frame}{Group Work \& Reference Materials Allowed}
@@ -60,23 +81,13 @@
     \begin{itemize}
       \item Languages
       \begin{itemize}
-        \item Common
-        \begin{itemize}
-          \item C
-          \item C++
-          \item Java
-        \end{itemize}
-        \item Uncommon
-        \begin{itemize}
-          \item Python
-          \item Anything with a free and readily available compiler
-        \end{itemize}
+        \item We'll talk about these a bit later
       \end{itemize}
       \pause
       \item Time Frame
       \begin{itemize}
-        \item 24-48 Hours with questions released periodically
-        \item 3-5 Hours with questions released at the beginning
+        \item $<$ 24 hours (typically 3 - 5 hours)
+        \item $\ge$ 24 hours (typically 24 - 72 hours)
       \end{itemize}
     \end{itemize}
   \end{centering}
@@ -107,43 +118,290 @@
   \end{centering}
 \end{frame}
 
-
-\begin{frame}{Competitors \& Expectations}
-
-\end{frame}
-
-\begin{frame}{Examples}
+\begin{frame}{Run-times \& Computers}
   \begin{centering}
     \begin{itemize}
-      \item ACM - Specific Groups, Dead Trees
+      \item Run-times
       \begin{itemize}
-        \item Specific Groups
-        \item Dead Trees Available
-        \item Languages Limited to C, C++, Java
-        \item 5 hour time limit
-        \item "Immediate" feedback (~15 minute delay)
-        \item Source submission
+        \item Run-time sensitive
+        \item Run-time insensitive
+        \item All competitions are runtime sensitive to some degree (obviously). For some though, runtime is \textit{everything}.
       \end{itemize}
-      \pause
-      \item IEEExtreme - Limited Group Size, Internets
+      \item Computers
       \begin{itemize}
-        \item Limited Group Size
-        \item Internets
-        \item Languages Limited (C, C++, Java)
-        \item 24 hour time limit (problems released every 6 hours)
-        \item Immediate feedback (~3-5 minute delay)
-        \item Source submission
+        \item One
+        \item Many
       \end{itemize}
     \end{itemize}
   \end{centering}
 \end{frame}
 
-  
-  
+\begin{frame}{Competitors \& Expectations}
+  \begin{centering}
+    \begin{itemize}
+      \item Competitors
+      \begin{itemize}
+        \item Academic - Undergraduates
+        \item Academic - Students
+        \item Open
+      \end{itemize}
+      \item Expectations
+      \begin{itemize}
+        \item Solved Most
+        \item Solved All
+      \end{itemize}
+    \end{itemize}
+  \end{centering}
+\end{frame}
+      
 
-\section{Pitfalls}
+
+\begin{frame}{Example - ACM ICPC}
+  \begin{centering}
+    \begin{itemize}
+      \item Specific Groups (Exactly 3)
+      \item Dead Trees Available
+      \item Languages Limited to C, C++, Java
+      \item 5 hour time limit
+      \item One computer for all 3 competitors
+      \item ``Immediate" feedback (~15 minute delay)
+      \item Source submission
+      \item Generally not runtime sensitive
+      \item Academic - Undergraduates
+      \item Winners solve \textbf{most} of the problems (2009 ICPC winners solved 9 out of 12)
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+\begin{frame}{Example - IEEExtreme}
+  \begin{centering}
+    \begin{itemize}
+      \item Limited Group Size (Up to 3)
+      \item Internets
+      \item Every competitor can bring their own computer(s)
+      \item Languages Limited (C, C++, Java)
+      \item 24 hour time limit (problems released every 6 hours)
+      \item Immediate feedback (~3-5 minute delay)
+      \item Source submission
+      \item Generally not runtime sensitive
+      \item Academic - Students
+      \item Winners solve all the problems, then ranked by time to completion
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+\begin{frame}{Example - Facebook's Hacker Cup}
+  \begin{centering}
+    \begin{itemize}
+      \item Individual
+      \item Internets
+      \item No limit to language (free compiler must be available)
+      \item 3 hour time limit
+      \begin{itemize}
+        \item Max runtime is 6 minutes, but must be run on \textbf{your} system
+        \item This is a very runtime sensitive competition
+      \end{itemize}
+      \item Immediate feedback (~3-5 minute delay)
+      \item Source submission
+      \item Academic - Students
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+  
+\begin{frame}{Example - ICFP}
+  \begin{centering}
+    \begin{itemize}
+      \item Unrestricted group size
+      \item Internets
+      \item No limit to language
+      \item 72 hour time limit
+      \item Both source and answer submission
+      \item Open to anyone
+      \item Only one problem to solve, but open ended, meaning whoever solves it ``best", wins
+      \item Runtime is considered, but tends to be the absolute last measure considered (only matters when the other measurements are the same in every other way).
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+\section{Preparation \& Pitfalls}
+
+\begin{frame}{Preparation - Individuals}
+  \begin{centering}
+    \begin{itemize}
+      \item There are plenty of previous competitions online - practice using them!
+      \item There's a book, Programming Challenges by Skiena and Revilla 
+      \item Know the language you're going to use - we'll talk a bit more about this later
+      \item Familiarize yourself with the most useful algorithms. Implementing them in the language you have to use would be a \textbf{great} idea.
+      \item If you can bring in dead trees, figure out which you're bringing in, get to know them a bit
+      \item If it is open internet, bookmark the pages you'll use, close pages that will distract you before you go
+      \item If you can use your computer or bring in electronic resources, consider getting PDFs of the algorithm books (Ctrl-F is your friend)
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+\begin{frame}{Preparation - Groups}
+  \begin{centering}
+    \begin{itemize}
+      \item Practice with your group!
+      \item Roles for group members can be very useful. Typically broken down into:
+      \begin{itemize}
+        \item Programmer - Does all the typing (pick your fastest typer, or whoever knows the language best). Translates the pseudocode to real code, applies optimizations (dynamic programming, etc.)
+        \item Solver - Determines the high level solution to the problem, maybe writes the pseudocode for it.
+        \item Debugger - Looks at the pseudocode, tries to generate the test cases for it. If the real code has issues, walks through it to see where there could be errors, again generates test cases to see where it fails
+        %\item These are \textbf{NOT} absolute roles. Everyone on your team should be able to fill any role when necessary. If a program is best implemented in C, the programmer may be someone different from whoever would be the programmer for a Java implementation. Someone may be really good at graph theory, so they're the solver for the graph theory problems while someone else is being the programmer. You have to be flexible, this is about optimizing everyone's time.
+          \item These are \textbf{NOT} absolute roles. Everyone has to be flexible.
+      \end{itemize}
+      \pause
+      \item Make sure you get along with your group.
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+\begin{frame}{Preparation - Day Of}
+  \begin{centering}
+    \begin{itemize}
+      \item Bring whatever materials you're allowed. If books, an algorithms book, a reference for your language, etc.
+      \item Pencils and paper! You can usually work out the smaller problems by hand, makes it easier to generate test cases, write pseudocode, etc.
+      \item Whiteboard
+      \item Boiler plate code if you're allowed (Data structure implementations, generic input reading code, etc.)
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+\begin{frame}{Pitfalls}
+  \begin{centering}
+    \begin{itemize}
+      \item Input - Read the specification \textit{very} carefully
+      \begin{itemize}
+        \item Pay special attention to whether it can accept multiple test cases in one file
+        \item Pay attention to possible edge cases
+      \end{itemize}
+      \item Whitespace
+      \begin{itemize}
+        \item Typically you'll receive example output. Pay special attention to all whitespace, particularly if dealing with it is part of the problem
+      \end{itemize}
+
+      \item Unless you know that runtime is a big part of the competition, optimize for programmer efficiency first, and then optimize runtime efficiency later if you need to
+    \end{itemize}
+  \end{centering}
+\end{frame}
 
 \section{Programming Languages}
+
+\begin{frame}{Common Languages}
+  \begin{centering}
+    \begin{itemize}
+     \item C
+     \item C++
+     \item Java
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+\begin{frame}{Uncommon, but useful languages}
+  \begin{centering}
+    \begin{itemize}
+      \item Python/Perl/Ruby
+      \begin{itemize}
+        \item These aren't uncommon languages, just uncommon to be on the list of restricted languages for programming contests today
+      \end{itemize}
+      \item LISP
+      \item Haskell/OCaml/ML
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+\begin{frame}{C/C++}
+  \begin{centering}
+    \begin{itemize}
+      \item Pros:
+      \begin{itemize}
+        \item Fast. If execution time is important this is probably your language of choice.
+        \item C is very small, easy to know just about all of it
+        \item Most algorithms have reference implementation in C and C++
+        \item C++ has a huge standard lib. Learn it, love it
+        \item A common competition language
+      \end{itemize}
+      \item Cons:
+      \begin{itemize}
+        \item Not typesafe
+        \item Not all code is necessarily portable
+        \item C has very few built-in data structures, meaning you'll have to write most by hand
+        \item Bugs can be subtle
+        \item Not easily read (an issue for group competitions)
+      \end{itemize}
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+
+
+\begin{frame}{Java}
+  \begin{centering}
+    \begin{itemize}
+      \item Pros:
+      \begin{itemize}
+        \item Common language for competitions
+        \item Large standard library
+        \item Relatively typesafe
+        \item Memory managed
+        \item Faster than dynamic languages, safer than C/C++
+        \item More portable than C/C++
+      \end{itemize}
+      \item Cons:
+      \begin{itemize}
+        \item Slower than C/C++
+        \item Very verbose
+        \item Typesafety typically means you have to write more code
+        \item Somewhat easily read
+      \end{itemize}
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+\begin{frame}{Python/Perl/Ruby}
+  \begin{centering}
+    \begin{itemize}
+      \item Pros:
+      \begin{itemize}
+        \item Programmer time efficient
+        \item Usually fast ``enough"
+        \item Can be very readable
+        \item REPL makes it easy to test particular components, quickly run test cases
+        \item Large standard libs, custom objects can use easily
+      \end{itemize}
+      \item Cons
+      \begin{itemize}
+        \item Relatively slow
+        \item Lots of diversity, not everyone on your team will know a particular dynamic language
+        \item Not commonly available in competitions with a restricted language set
+      \end{itemize}
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+\begin{frame}{Others}
+  \begin{centering}
+    \begin{itemize}
+      \item LISP
+      \begin{itemize}
+        \item Still a consistent winner in the AI problem space
+        \item Higher order functions are incredibly useful
+        \item Unfortunately, this is rarely an option, and most people don't know it
+        \item Probably not worth learning for competitions, but useful if you already know it
+      \end{itemize}
+      \item Haskell/OCaml/ML
+      \begin{itemize}
+        \item A winner in some of the longer competitions (namely ICFP...)
+        \item Typesafety gives you a lot more confidence your code
+        \item Compiled code is very fast (comparable to C in some cases), and it is easier to reason in a recursive manner if you're used to this style
+        \item Not something I'd learn for competitions, and likely of limited use (a LISP is probably the better option for competitions, if you want a similar language)
+      \end{itemize}
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
 
 \section{Algorithms and Thought Processes}
 
