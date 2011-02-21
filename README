@@ -7,4 +7,4 @@ Sphinx
 rst2pdf
 
 Usage:
-The pdf should already be built, but if not running `make pdf` will build it from source.
+The pdf should already be built in the top level directory. If not `make pdf` will build it from source, and place it in the top level directory
