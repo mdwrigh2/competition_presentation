@@ -125,19 +125,19 @@
   \end{centering}
 \end{frame}
 
-\begin{frame}{Run-times \& Computers}
+\begin{frame}{Time Restrictions \& Development Environment}
   \begin{centering}
     \begin{itemize}
-      \item Run-times
+      \item Time Restrictions
       \begin{itemize}
         \item Run-time sensitive
         \item Run-time insensitive
         \item All competitions are runtime sensitive to some degree (obviously). For some though, runtime is \textit{everything}.
       \end{itemize}
-      \item Computers
+      \item Development Environment
       \begin{itemize}
-        \item One
-        \item Many
+        \item One computer provided
+        \item Individual personal computers
       \end{itemize}
     \end{itemize}
   \end{centering}
@@ -236,13 +236,16 @@
 \begin{frame}{Preparation - Individuals}
   \begin{centering}
     \begin{itemize}
-      \item There are plenty of previous competitions online - practice using them!
-      \item There's a book, Programming Challenges by Skiena and Revilla 
-      \item Know the language you're going to use - we'll talk a bit more about this later
-      \item Familiarize yourself with the most useful algorithms. Implementing them in the language you have to use would be a \textbf{great} idea.
-      \item If you can bring in dead trees, figure out which you're bringing in, get to know them a bit
-      \item If it is open internet, bookmark the pages you'll use, close pages that will distract you before you go
-      \item If you can use your computer or bring in electronic resources, consider getting PDFs of the algorithm books (Ctrl-F is your friend)
+      \item If the questions from previous years are available, use them!
+      \item Books: Programming Challenges by Skiena and Revilla et al.
+      \item Know the language you're going to use
+      \item Familiarize yourself with the most useful algorithms. Implementing them in the language you have to use would be a \textbf{great} idea especially if you can bring your own code.
+      \item Get to know your reference materials.
+        \begin{itemize}
+          \item Figure out which books you're using and know where to find what you will likely need (quick reference, specific algorithms)
+          \item If it is open internet, bookmark the pages you'll use, close pages that will distract you before you go
+          \item If you can use your computer or bring in electronic resources, consider getting PDFs of the algorithm books (Ctrl-F is your friend)
+        \end{itemize}
     \end{itemize}
   \end{centering}
 \end{frame}
@@ -260,7 +263,7 @@
           \item These are \textbf{NOT} absolute roles. Everyone has to be flexible.
       \end{itemize}
       \pause
-      \item Make sure you get along with your group.
+      \item Choose your group members carefully\ldots
     \end{itemize}
   \end{centering}
 \end{frame}
@@ -269,7 +272,7 @@
   \begin{centering}
     \begin{itemize}
       \item Bring whatever materials you're allowed. If books, an algorithms book, a reference for your language, etc.
-      \item Pencils and paper! You can usually work out the smaller problems by hand, makes it easier to generate test cases, write pseudocode, etc.
+      \item Pencil and paper! You can usually work out the smaller problems by hand, makes it easier to generate test cases, write pseudocode, etc.
       \item Whiteboard
       \item Boiler plate code if you're allowed (Data structure implementations, generic input reading code, etc.)
     \end{itemize}
@@ -282,14 +285,14 @@
       \item Input - Read the specification \textit{very} carefully
       \begin{itemize}
         \item Pay special attention to whether it can accept multiple test cases in one file
-        \item Pay attention to possible edge cases
+        \item Watch out for edge cases which usually aren't demonstrated in the given sample I/O
       \end{itemize}
       \item Whitespace
       \begin{itemize}
         \item Typically you'll receive example output. Pay special attention to all whitespace, particularly if dealing with it is part of the problem
       \end{itemize}
 
-      \item Unless you know that runtime is a big part of the competition, optimize for programmer efficiency first, and then optimize runtime efficiency later if you need to
+      \item Unless you know that runtime is a big part of the competition, optimize for programmer efficiency first.
       \item Know your primitive max and min values. You don't want to have an unnoticed overflow on an otherwise correct algorithm 
     \end{itemize}
   \end{centering}
@@ -307,7 +310,7 @@
   \end{centering}
 \end{frame}
 
-\begin{frame}{Uncommon, but useful languages}
+\begin{frame}{Less Common, but useful languages}
   \begin{centering}
     \begin{itemize}
       \item Python/Perl/Ruby
@@ -329,7 +332,7 @@
         \item C is very small, easy to know just about all of it
         \item Most algorithms have reference implementation in C and C++
         \item C++ has a huge standard lib. Learn it, love it
-        \item A common competition language
+        \item Very common competition languages
       \end{itemize}
       \item Cons:
       \begin{itemize}
@@ -362,7 +365,7 @@
         \item Slower than C/C++
         \item Very verbose
         \item Typesafety typically means you have to write more code
-        \item Somewhat easily read
+        \item Easier to read
       \end{itemize}
     \end{itemize}
   \end{centering}
@@ -377,7 +380,7 @@
         \item Usually fast ``enough"
         \item Can be very readable
         \item REPL makes it easy to test particular components, quickly run test cases
-        \item Large standard libs, custom objects can use easily
+        \item Large standard libs, easy to use custom objects.
       \end{itemize}
       \item Cons
       \begin{itemize}
@@ -413,18 +416,18 @@
 
 \section{Algorithms, Data Structures and Thought Processes}
 
-\begin{frame}{Preface}
+\begin{frame}{Algorithms, Data Structures, and Thought Processes}
   \begin{centering}
-    \huge{Preface}
+    \huge{Algorithms, Data Structures, and Thought Processes}
   \end{centering}
 \end{frame}
 
 \begin{frame}{Thought Processes}
   \begin{centering}
     \begin{itemize}
-      \item Brute force solutions are okay - use them when it saves you time
+      \item Brute force solutions are okay - use them when it saves you programming and thinking time
       \item Recursive solutions are great. If you can make them tail recursive, there is little to no performance hit (with the right compiler). If the function is deterministic based on input, they're \textbf{very} easy to memoize, especially with dynamic languages
-      \item Again, optimize only when necessary. Premature optimization is typically unnecessary and can cost you lots of time
+      \item Again, optimize only when necessary. Premature optimization  can cost you lots of time
       \item Break it up into discrete steps if possible. If you have multiple computers, agree on an output from one of the steps and you can parallelize the problem.
     \end{itemize}
   \end{centering}
@@ -433,8 +436,14 @@
 \begin{frame}{Data Structures}
   \begin{centering}
     \begin{itemize}
-      \item Know your basic data structures cold
-      \item Data structures, in my opinion, are the most fundamental piece of a knowledge for a competition.
+      \item Know your data structures cold
+      \pause
+      \item Data Structures
+      \pause
+      \item Data Structures
+      \pause
+      \item Data Structures
+      \pause
       \item You should know things like:
       \begin{itemize}
         \item Linked Lists
@@ -457,23 +466,11 @@
   \end{centering}
 \end{frame}
 
-\begin{frame}{Node Example}
-  \include{Node}
-\end{frame}
-
-\begin{frame}{LL Example}
-  \include{LL}
-\end{frame}
-
-\begin{frame}{LL Usage}
-  \include{LL-usage}
-\end{frame}
-
 \begin{frame}{Arrays}
   \begin{centering}
     \begin{itemize}
      \item You should know these
-     \item Great for lookup, or if you know how many items you're going to have (or if the max is reasonable)
+     \item Great for lookup, or if you know how many items you're going to have (or if the max is reasonable, often it's not)
     \end{itemize}
   \end{centering}
 \end{frame}
@@ -547,10 +544,10 @@
     \begin{itemize}
       \item Primes - know what they are, know how to calculate them in a pinch
       \begin{itemize}
-        \item If you have access to the internet, don't bother calculating them. There's at least the first 398 million available online in plaintext, separated by spaces
+        \item If you have access to the internet, don't bother calculating them. There's at least the first 398 million available online in plaintext, separated by spaces, you should know how to read and use them.
       \end{itemize}
       \item Know how your language does arbitrary precision arithmetic (Java's BigInteger, GMP, etc.)
-      \item Modular arithmetic - Typically not necessary, but a number of problems can be optimized with some simple modular arithmetic
+      \item Modular arithmetic - some number theory problems can be simplified.
     \end{itemize}
   \end{centering}
 \end{frame}
@@ -559,8 +556,8 @@
   \begin{centering}
     \begin{itemize}
       \item Know the performance implications of sorting a list, performing actions (insert, lookup) on a sorted data structure
-      \item Usually not necessary to memorize sorting algorithms
-      \item If you are going to memorize one, make it quicksort
+      \item Your language should have a good sorting implementation.
+      \item If you are going to memorize one, make it quicksort.
     \end{itemize}
   \end{centering}
 \end{frame}
@@ -568,11 +565,48 @@
 \begin{frame}{Combinatorics}
   \begin{centering}
     \begin{itemize}
-      \item Know really basic combinatorics (how many combinations of these three groups of items I can have, etc.)p
-      DONT BOTHER IT DOESNT MATTER ANYMORE
+      \item Know basic combinatorics (how many combinations of these three groups of items I can have, etc.)
+      \item Larger problems sometimes boil down to simple combinatorix.
+      \pause
+      \item DONT BOTHER IT DOESNT MATTER ANYMORE
       LIVE FOR THE MOMENT
     \end{itemize}
   \end{centering}
 \end{frame}
+
+\begin{frame}{Graph Theory}
+  \begin{centering}
+    \begin{itemize}
+      \item If you can bring your own code, this is what you should have. 
+      \item Know at least one implementation of a directed graph in your chosen language.
+      \item Algorithms to know:
+        \begin{itemize}
+          \item Breadth first search
+          \item Depth first search
+          \item Dijkestra's 
+          \item Minimum Spanning Tree (Prim's, Kruskal's, et al.)
+        \end{itemize}
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+\begin{frame}{Our Competition}
+  \begin{centering}
+    \begin{itemize}
+      \item When: Saturday, Feb. 26, 10am-4pm
+      \item Where: Withers 120
+      \item Prizes: TBD (but they will exist!)
+      \item Open group competition
+      \item Internets + books + IRC
+      \item BYOC 
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+\begin{frame}{The End}
+  \centerline{\huge Questions?}
+  \centerline{Comments?}
+\end{frame}
+  
 
 \end{document}
