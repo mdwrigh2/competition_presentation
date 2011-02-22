@@ -1,6 +1,13 @@
 \documentclass{beamer}
 \usetheme{CambridgeUS}
 
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{fancyvrb}
+\usepackage[ascii]{inputenc}
+
+\include{pygments}
+
 \setbeamertemplate{frametitile}
 {
   \begin{centering}
@@ -283,6 +290,7 @@
       \end{itemize}
 
       \item Unless you know that runtime is a big part of the competition, optimize for programmer efficiency first, and then optimize runtime efficiency later if you need to
+      \item Know your primitive max and min values. You don't want to have an unnoticed overflow on an otherwise correct algorithm 
     \end{itemize}
   \end{centering}
 \end{frame}
@@ -403,6 +411,62 @@
 \end{frame}
 
 
-\section{Algorithms and Thought Processes}
+\section{Algorithms, Data Structures and Thought Processes}
+
+\begin{frame}{Preface}
+  \begin{centering}
+    \huge{Preface}
+  \end{centering}
+\end{frame}
+
+\begin{frame}{Thought Processes}
+  \begin{centering}
+    \begin{itemize}
+      \item Brute force solutions are okay - use them when it saves you time
+      \item Recursive solutions are great. If you can make them tail recursive, there is little to no performance hit (with the right compiler). If the function is deterministic based on input, they're \textbf{very} easy to memoize, especially with dynamic languages
+      \item Again, optimize only when necessary. Premature optimization is typically unnecessary and can cost you lots of time
+      \item Break it up into discrete steps if possible. If you have multiple computers, agree on an output from one of the steps and you can parallelize the problem.
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+\begin{frame}{Data Structures}
+  \begin{centering}
+    \begin{itemize}
+      \item Know your basic data structures cold
+      \item Data structures, in my opinion, are the most fundamental piece of a knowledge for a competition.
+      \item You should know things like:
+      \begin{itemize}
+        \item Linked Lists
+        \item Arrays
+        \item Stacks
+        \item Queues
+        \item Dictionaries
+      \end{itemize}
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+\begin{frame}{Linked Lists}
+  \begin{centering}
+    \begin{itemize}
+      \item Singly Linked
+      \item Doubly Linked
+      \item Circular
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+\begin{frame}{Node Example}
+  \include{Node}
+\end{frame}
+
+\begin{frame}{LL Example}
+  \include{LL}
+\end{frame}
+
+\begin{frame}{LL Usage}
+  \include{LL-usage}
+\end{frame}
 
 \end{document}

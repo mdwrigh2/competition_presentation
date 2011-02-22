@@ -1,4 +1,4 @@
-LATEX = xelatex
+LATEX = pdflatex
 
 presentation.pdf: presentation.tex
 	$(LATEX) presentation.tex

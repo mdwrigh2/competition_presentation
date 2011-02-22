@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k}{class} \PY{n+nc}{LinkedList}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+    \PY{k}{def} \PY{n+nf}{\PYZus{}\PYZus{}init\PYZus{}\PYZus{}}\PY{p}{(}\PY{n+nb+bp}{self}\PY{p}{)}\PY{p}{:}
+        \PY{n+nb+bp}{self}\PY{o}{.}\PY{n}{head} \PY{o}{=} \PY{n+nb+bp}{None}
+
+    \PY{k}{def} \PY{n+nf}{insert}\PY{p}{(}\PY{n+nb+bp}{self}\PY{p}{,} \PY{n}{node}\PY{o}{=}\PY{n+nb+bp}{None}\PY{p}{)}\PY{p}{:}
+        \PY{k}{if} \PY{o+ow}{not} \PY{n+nb+bp}{self}\PY{o}{.}\PY{n}{head}\PY{p}{:}
+            \PY{n+nb+bp}{self}\PY{o}{.}\PY{n}{head} \PY{o}{=} \PY{n}{node}
+            \PY{k}{return}
+        \PY{n}{curr\PYZus{}node} \PY{o}{=} \PY{n+nb+bp}{self}\PY{o}{.}\PY{n}{head}
+        \PY{k}{while} \PY{n}{curr\PYZus{}node}\PY{o}{.}\PY{n}{cdr}\PY{p}{:}
+            \PY{k}{pass}
+        \PY{n}{curr\PYZus{}node}\PY{o}{.}\PY{n}{cdr} \PY{o}{=} \PY{n}{node}
+\end{Verbatim}
