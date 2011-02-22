@@ -469,4 +469,110 @@
   \include{LL-usage}
 \end{frame}
 
+\begin{frame}{Arrays}
+  \begin{centering}
+    \begin{itemize}
+     \item You should know these
+     \item Great for lookup, or if you know how many items you're going to have (or if the max is reasonable)
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+% create an array in python, show it, maybe sort it
+
+\begin{frame}{Stacks}
+  \begin{centering}
+    \begin{itemize}
+      \item LIFO or FILO data structure
+      \item Arrays in some languages (e.g. python) can be used as stacks with their push and pop methods
+      \item Good for things like depth-first traversal of graphs, backtracking solutions, etc.
+      \item Also can be used to do things like check matching pairs 
+      \begin{itemize}
+        \item Example: Matching Parens
+        \item Push '(' onto stack, on ')' pop it off. 
+        \item If you try to pop on an empty stack, or at the end of the string the stack isn't empty, fail
+        \item Otherwise all parens are matching, which is success.
+      \end{itemize}
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+% Stacks implementation via python arrays
+
+\begin{frame}{Queues}
+  \begin{centering}
+    \begin{itemize}
+      \item Regular Queue
+      \begin{itemize}
+        \item A FIFO data structure
+        \item Useful for breadth first searches in graphs, etc.
+      \end{itemize}
+      \item Priority Queue
+      \begin{itemize}
+        \item A data structure ordered by a specific attribute first, and then by the time they're inserted (FIFO)
+        \item Example: Hospitals with patients
+        \item Typically easier just to work with a sorted array or list, but if you need an efficient data structure for doing lots of inserts, this is the better choice
+      \end{itemize}
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+\begin{frame}{Dictionaries}
+  \begin{centering}
+    \begin{itemize}
+      \item Content-based retrieval, rather than position based
+      \item Typically implemented with hash tables, but not necessarily
+      \item Useful if your language has it, probably not worth implementing if it doesn't
+    \end{itemize}
+  \end{centering}
+\end{frame}
+% determining if a string has repeating letters
+
+\begin{frame}{Strings}
+  \begin{centering}
+    \begin{itemize}
+      \item Don't bother memorizing string searching algorithms (KMP, etc.)
+      \item DO know how to process strings as input
+      \begin{itemize}
+        \item Reading stdin, files
+        \item Extracting data from strings (str.split(),atoi(), scanf(), int())
+      \end{itemize}
+    \end{itemize}
+  \end{centering}
+\end{frame}
+% Maybe show example input, read in with python
+
+\begin{frame}{Numbers}
+  \begin{centering}
+    \begin{itemize}
+      \item Primes - know what they are, know how to calculate them in a pinch
+      \begin{itemize}
+        \item If you have access to the internet, don't bother calculating them. There's at least the first 398 million available online in plaintext, separated by spaces
+      \end{itemize}
+      \item Know how your language does arbitrary precision arithmetic (Java's BigInteger, GMP, etc.)
+      \item Modular arithmetic - Typically not necessary, but a number of problems can be optimized with some simple modular arithmetic
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+\begin{frame}{Sorting}
+  \begin{centering}
+    \begin{itemize}
+      \item Know the performance implications of sorting a list, performing actions (insert, lookup) on a sorted data structure
+      \item Usually not necessary to memorize sorting algorithms
+      \item If you are going to memorize one, make it quicksort
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
+\begin{frame}{Combinatorics}
+  \begin{centering}
+    \begin{itemize}
+      \item Know really basic combinatorics (how many combinations of these three groups of items I can have, etc.)p
+      DONT BOTHER IT DOESNT MATTER ANYMORE
+      LIVE FOR THE MOMENT
+    \end{itemize}
+  \end{centering}
+\end{frame}
+
 \end{document}
